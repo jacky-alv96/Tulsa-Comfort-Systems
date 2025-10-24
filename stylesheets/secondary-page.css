@@ -1,0 +1,96 @@
+.secondary-page-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin-top: 40px;
+}
+.secondary-page-banner h1 {
+  color: white;
+  font-size: 40px;
+}
+.lower-h1 {
+  font-size: 24px;
+  border-bottom: 4px solid red;
+}
+.secondary-page-body h2 {
+
+}
+
+.secondary-page-info-body {
+  margin: 10px 0px 25px 0px;
+}
+.secondary-page-info-body {
+  font-size: 20px;
+}
+
+.secondary-page-info-body iframe {
+    width: 100%;
+    height: 325px;
+    margin: 0px auto 25px auto;
+}
+
+
+
+
+
+.secondary-page-info-header h3 {
+  font-size: 24px;
+  text-align: left;
+}
+.secondary-page-info-list {
+  list-style: none;
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+.secondary-page-info-list i {
+  color: red;
+}
+
+
+
+.secondary-pg-call-btn {
+  background: #296AB1;
+  width: 100%;
+  margin: 0 auto;
+
+  text-align: center;
+  padding: 20px 0px;
+}
+.secondary-pg-call-btn a {
+  color: white;
+  width: 100%;
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 800px) {
+  .secondary-page-banner {
+    margin-top: 150px;
+    padding: 150px 0;
+    background-position: center;
+  }
+  .secondary-page-body {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+  }
+  .secondary-page-info-body {
+    width: 50%;
+    margin: 25px auto;
+  }
+  .secondary-page-info-body p {
+    font-size: 24px;
+  }
+  .secondary-page-info-body ul li {
+    font-size: 24px;
+  }
+  .secondary-page-info-header h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+

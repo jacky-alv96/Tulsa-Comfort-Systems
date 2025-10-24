@@ -1,0 +1,23 @@
+.google-map {
+
+}
+
+.google-map iframe {
+  height: 450px;
+  width: 100%;
+}
+.google-map h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .google-map {
+    width: 50%;
+    margin: 0 auto 25px auto;
+  }
+  .google-map iframe {
+    height: 450px;
+    width: 100%;
+  }
+}

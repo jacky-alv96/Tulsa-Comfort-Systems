@@ -1,0 +1,97 @@
+#contact-page-form {
+  margin-top: 80px;
+}
+.contact-form {
+  padding: 25px 0px 50px 0px;
+}
+
+.secondary-contact-form {
+  padding: 0px 0px 50px 0px;
+}
+
+.contact-form h2, h3 {
+  color: #296AB1;
+  text-align: center;
+}
+
+.contact-form-body {
+
+}
+.contact-form-body input {
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border: 2px solid #296AB1;
+  outline: none;
+}
+.contact-form-body input::placeholder {
+  font-size: 18px;
+  overflow: visible;
+}
+
+.contact-form-body textarea {
+  width: 100%;
+  border: 2px solid #296AB1;
+}
+.contact-form-body textarea::placeholder {
+  font-size: 18px;
+  overflow: visible;
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.submit-btn button {
+  width: 70%;
+  background: #296AB1;
+  color: white;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+
+  border: none;
+  outline: none;
+}
+
+
+@media screen and (min-width: 800px) {
+  #contact-page-form {
+    margin-top: 200px;
+  }
+  .contact-form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form-body input {
+    width: 40%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border: 2px solid #296AB1;
+    outline: none;
+  }
+  .contact-form-body textarea {
+    width: 40%;
+    border: 2px solid #296AB1;
+  }
+  .submit-btn button {
+    width: 20%;
+    background: #296AB1;
+    color: white;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,44 @@
+.other-services {
+  display: flex;
+  overflow-x: auto;
+
+  margin: 0px 0px 25px 10px;
+}
+
+.other-services-block {
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-align: center;
+
+  margin-right: 10px;
+
+  height: 300px;
+  min-width: 200px;
+  max-width: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+.other-services-block a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .other-services-block {
+    height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+}

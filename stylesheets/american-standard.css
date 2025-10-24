@@ -1,0 +1,73 @@
+.american-standard {
+  background: #296AB1;
+  padding: 25px 0px;
+}
+.as-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.as-badge img {
+  width: 80%;
+}
+.as-badge h2 {
+  color: white;
+  text-align: center;
+}
+
+.as-video {
+  width: 90%;
+  margin: 10px auto;
+}
+.as-video video {
+  width: 100%;
+}
+
+.customer-care-dealer {
+  background: lightgrey;
+}
+.customer-care-dealer img {
+  width: 100%;
+}
+.customer-care-dealer h2 {
+  width: 90%;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 0px 20px 0px;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 800px) {
+  .customer-care-dealer {
+    display: none;
+  }
+
+  .american-standard {
+    background: #296AB1;
+    padding: 25px 0px;
+  }
+  .as-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .as-badge img {
+    width: 20%;
+  }
+  .as-badge h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .as-video {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .as-video video {
+    width: 100%;
+  }
+}

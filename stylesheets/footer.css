@@ -1,0 +1,18 @@
+footer {
+  background: rgb(40,40,40);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0px 0px 10px 0px;
+}

@@ -1,0 +1,55 @@
+.rgf-covid {
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rgf-covid img {
+    width: 100%;
+}
+.rgf-covid h3 {
+    font-size: 28px;
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+}
+.rgf-covid h4 {
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 90%;
+    height: 325px;
+    margin: 25px auto 0 auto;
+}
+
+.rgf-covid a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 70%;
+    background: #296AB1;
+    color: white;
+  
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+  
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width: 800px) {
+    .rgf-covid {
+        display: none;
+    }
+}

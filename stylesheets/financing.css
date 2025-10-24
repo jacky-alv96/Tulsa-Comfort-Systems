@@ -1,0 +1,38 @@
+.financing,
+.financing-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.financingHeader {
+    font-size: 48px;
+    margin: 50px auto; 
+    text-align: center; 
+    color: #296AB1
+}
+.financing img {
+    width: 100%;
+}
+.financing-qr img {
+    width: 80%;
+    margin: 5% auto;
+}
+@media screen and (min-width: 800px) {
+    .financing h2 {
+        font-size: 40px;
+        margin: 50px auto; 
+        text-align: center; 
+        color: #296AB1
+    }
+
+    .financing img {
+        width: 30%;
+        margin: 0 auto;
+    } 
+    .financing-qr img {
+        width: 30%;
+        margin: 5% auto;
+    } 
+}
