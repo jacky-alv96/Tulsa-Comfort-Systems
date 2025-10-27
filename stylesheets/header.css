@@ -65,6 +65,38 @@
   width: 100%;
 }
 
+.mobile-header h1 {
+  font-size: 35px;
+  color: black;
+  margin: 0;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.2;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mobile-header p {
+  max-width: 70%;
+  margin: 20px 0;
+  color: black;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 10;
+}
+
+.mobile-header .btn-blue {
+  margin-top: 25px;
+  position: relative;
+  z-index: 10;
+}
+
 .header-img {
 }
 .header-img img {
