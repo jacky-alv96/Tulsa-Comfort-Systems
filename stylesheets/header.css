@@ -8,9 +8,17 @@
   min-height: 40vh;
 }
 .mobile-header {
-  padding: 10px 0px 0px 0px;
-  height: 100%;
-
+  background-color: #FF6600;
+  background-image: url(../images/car2.png);
+  background-size: 60%;
+  background-position: calc(100% - 20px) calc(100% - 30px);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px 25px 40px 25px;
   position: relative;
 }
 
@@ -19,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -66,12 +73,12 @@
 }
 
 .mobile-header h1 {
-  font-size: 35px;
+  font-size: 26px;
   color: black;
   margin: 0;
   font-weight: 700;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.5;
   position: relative;
   z-index: 10;
   letter-spacing: 2px;
@@ -80,9 +87,9 @@
 
 .mobile-header p {
   max-width: 70%;
-  margin: 20px 0;
+  margin: 25px 0 0 0;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.8;
   text-align: left;
   font-weight: 400;
@@ -92,15 +99,31 @@
 }
 
 .mobile-header .btn-blue {
-  margin-top: 25px;
+  display: inline-block;
+  margin-top: 35px;
+  width: auto;
+  min-width: 120px;
+  background: black;
+  text-align: center;
+  padding: 14px 24px;
   position: relative;
   z-index: 10;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.header-img {
+.mobile-header .btn-blue a {
+  background: black;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
-.header-img img {
-  width: 100%;
+
+.mobile-header .btn-blue a:hover {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
 }
 
 

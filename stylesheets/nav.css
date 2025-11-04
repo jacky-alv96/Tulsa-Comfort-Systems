@@ -2,7 +2,7 @@
   display: none;
 }
 .mobile-nav {
-  background: #EA1C24;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,8 @@
 }
 
 .mobile-financing {
-  background: #296AB1;
+  background: white;
+  color: black;
   position: fixed;
   top: 0px;
   z-index: 5;
@@ -35,7 +36,7 @@
 .mobile-financing a {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: black;
 
   text-decoration: none;
   display: block;
@@ -75,6 +76,10 @@
 }
 .logo img {
   width: 70%;
+}
+
+.logo.mobile {
+  display: none;
 }
 
 

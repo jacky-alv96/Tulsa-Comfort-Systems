@@ -13,9 +13,11 @@ overflow-x: hidden;
 }
 .our-services h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
   padding: 50px 0;
+  width: 100%;
+  flex-basis: 100%;
 }
 .service-card {
   background: white;
@@ -82,6 +84,24 @@ overflow-x: hidden;
 
 .learn-more-btn a:hover {
   color: #FF6600;
+}
+@media screen and (max-width: 799px) {
+  .our-services h1 {
+    font-size: 26px;
+   padding: 20px 0px 30px 0px;
+  }
+  .our-services {
+    padding: 40px 20px 40px 20px;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+  }
+
 }
 
 
