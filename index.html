@@ -39,7 +39,9 @@
   <script src="https://kit.fontawesome.com/76634647d6.js"></script>
 
   <!--   Fonts -->
-  <!-- No custom fonts - using system sans-serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="stylesheets/nav.css">
   <link rel="stylesheet" href="stylesheets/header.css">
@@ -103,7 +105,9 @@
 
   <nav class="desktop-nav">
     <div class="desktop-nav-top">
-
+      <div class="promo-message">
+        <p>Expert HVAC Services | Fast, Reliable & Affordable | <a href="tel:+14052657777" class="call-link">Call Today!</a> <a href="tel:+14052657777" class="phone-icon"><i class="fas fa-phone"></i></a></p>
+      </div>
 
       <!-- <div class="logo">
         <a href="index.html"><img src="images/logo.png" alt="logo"></a>
@@ -220,62 +224,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-<!-- 
-  <section class="testimonials">
-    <div class="f5-container">
-      <div class="review1">
-        <h2>WHY CHOOSE US?</h2>
-        <br>
-        <p>"Shockley's quickly responded to my AC emergency during the summer heat. They assessed the situation and laid out my options. They worked with my time frame and didn't pressure me to make any hasty decisions. They had a good selection of options and we were able to find one that fit my finances.  The unit was quickly installed and has <strong><i>already saved my electric bill</i></strong>... They even went above and beyond during installation and didn't crush my baby blueberry bush that was planted right next to the unit. I didn't even have to point it out to them."</p>
-        <br>
-        <p><i>Submitted Via Google Reviews</i></p>
-      </div>
-
-      <div class="btn-white">
-        <a href="reviews.html">SEE 100+ MORE REVIEWS</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="desktop-testimonials">
-    <div class="f5-container">
-      <h2>WHY CHOOSE US?</h2>
-      <p>See what 100+ other people in the area have to say</p>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-6196d61e-42a6-4f1c-8fff-ee8453afbb1d"></div>
-    </div>
-  </section>
-
-  <div>
-    <h2 class="financingHeader">ASK US ABOUT FINANCING</h2>
-
-    <a
-      target="blank"
-      href="https://trueskycu.merchantlinq.com/cHhEWm5keFp0eFhBaEtwTW5mc2ZmdHFmZGlRYjFpUG1mZHEzRk82czhsdHFXWWsqMWRhYSoxOFhrOVVxUkhSKjFyQVR2N21RKlNsaHM1OVcyKjFlaVpMQzFYZlhlb3VEa0NNNlYwdVhNM2JEQXNhcFNBS0RUdG5CaVhScXJBaFhMUHVjWXRodlRLQTlGSWxtbHZiZmp5VFpNZ2c9PQ=="
-    >
-      <div
-        class="financing-qr"
-        style="margin-top: 100px;"
-      >
-        <img
-          style="margin-bottom: -20px;"
-          src="images/truesky.png"
-        >
-        <img
-          src="images/financing-QR.PNG"
-        />
-      </div>
-    </a>
-  </div> -->
-
-  <!-- <div class="customer-care-dealer">
-    <img src="images/customer-care-dealer.png" alt="American Standard Customer Care Dealer Badge, Best HVAC Dealers in Yukon, Oklahoma">
-    <h2>Customer Care Dealers are hand picked by American Standard. This badge means that you’re working with the finest heating and air conditioning professionals in the business!</h2>
-  </div> -->
 
   <section class="our-services">
     <h1>OUR SERVICES</h1>
@@ -554,6 +502,24 @@
       </div>
     
   </footer>
+
+  <script>
+    // Make process steps clickable to toggle highlighted state
+    document.addEventListener('DOMContentLoaded', function() {
+      const steps = document.querySelectorAll('.step');
+      
+      steps.forEach(function(step) {
+        step.addEventListener('click', function() {
+          // Remove highlighted class from all steps
+          steps.forEach(function(s) {
+            s.classList.remove('highlighted');
+          });
+          // Add highlighted class to clicked step
+          this.classList.add('highlighted');
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

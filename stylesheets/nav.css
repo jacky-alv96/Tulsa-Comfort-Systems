@@ -167,7 +167,48 @@
     height: 4vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .promo-message {
+    color: #ff6600;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .promo-message p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .promo-message .call-link {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .promo-message .call-link:hover {
+    color: #ff8533;
+  }
+  .promo-message .phone-icon {
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+    transition: color 0.3s ease;
+  }
+  .promo-message .phone-icon:hover {
+    color: #ff6600;
+  }
+  .promo-message i {
+    color: black;
+    font-size: 14px;
+  }
+  .promo-message .phone-icon:hover i {
+    color: #ff6600;
   }
   .logo {
     width: auto;
@@ -228,6 +269,7 @@
     justify-content: space-between;
     min-height: 50px;
     padding: 0 4%;
+    border-bottom: 3px solid #FF6600;
   }
 
   .desktop-nav-bottom-links {
@@ -255,7 +297,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #296AB1;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -267,7 +309,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    background: #296AB1;
+    background: black;
     text-align: center;
   }
   .dropdown:hover .dropdown-content {
