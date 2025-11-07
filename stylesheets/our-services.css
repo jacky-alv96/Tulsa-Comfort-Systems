@@ -134,6 +134,76 @@ overflow-x: hidden;
     box-sizing: border-box;
     flex-shrink: 0;
   }
+  
+  /* For Other Services section - show 4 cards, scroll for rest */
+  .our-services.other-services-row {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: visible;
+    gap: 0;
+    padding: 50px 0;
+  }
+  
+  .our-services.other-services-row h1 {
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 0 30px 0;
+    margin: 0;
+    display: block;
+  }
+  
+  .our-services.other-services-row .service-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 0 20px;
+    scroll-padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .our-services.other-services-row .service-card {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    flex-shrink: 0;
+    height: auto;
+  }
+  
+  .our-services.other-services-row .service-card-image {
+    height: 220px;
+    width: 100%;
+  }
+  
+  .our-services.other-services-row .service-card-content {
+    padding: 25px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .our-services.other-services-row .service-card-content h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .our-services.other-services-row .service-card-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    flex: 1;
+  }
+  
+  .our-services.other-services-row .learn-more-btn {
+    margin-top: auto;
+  }
 
   .service-card-image {
     height: 280px;
