@@ -142,7 +142,7 @@ overflow-x: hidden;
     align-items: stretch;
     overflow-x: visible;
     gap: 0;
-    padding: 50px 0;
+    padding: 50px 0 50px 0;
   }
   
   .our-services.other-services-row h1 {
@@ -162,8 +162,8 @@ overflow-x: hidden;
     flex-wrap: nowrap;
     gap: 30px;
     overflow-x: auto;
-    padding: 0 20px;
-    scroll-padding-left: 20px;
+    padding: 0 50px;
+    scroll-padding-left: 50px;
     width: 100%;
     box-sizing: border-box;
   }

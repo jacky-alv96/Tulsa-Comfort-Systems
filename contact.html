@@ -47,6 +47,9 @@
   <link rel="stylesheet" href="stylesheets/form.css">
   <link rel="stylesheet" href="stylesheets/main.css">
   <link rel="stylesheet" href="stylesheets/secondary-page.css">
+  <link rel="stylesheet" href="stylesheets/our-process.css">
+  <link rel="stylesheet" href="stylesheets/financing.css">
+  <link rel="stylesheet" href="stylesheets/financing-promo.css">
   <link rel="stylesheet" href="stylesheets/contact.css">
   <link rel="stylesheet" href="stylesheets/footer.css">
 
@@ -96,85 +99,509 @@
 
   <nav class="desktop-nav">
     <div class="desktop-nav-top">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-      </div>
-      <div class="phone">
-        <a href="tel:+14052657777">405-265-7777</a>
-      </div>
-      <div class="service-area">
-        <p>Serving Yukon, OK</p>
-      </div>
-      <div class="customer-care-dealer-banner">
-        <p>CUSTOMER CARE DEALER</p>
-        <div>
-          <img src="images/customer-care-dealer.png" alt="American Standard Customer Care Dealer Badge, Best HVAC Dealers in Yukon, Oklahoma">
-        </div>
+      <div class="promo-message">
+        <p>Expert HVAC Services | Fast, Reliable & Affordable | <a href="tel:+14052657777" class="call-link">Call Today!</a> <a href="tel:+14052657777" class="phone-icon"><i class="fas fa-phone"></i></a></p>
       </div>
     </div>
     <div class="desktop-nav-bottom">
-      <a href="index.html" style="color: #C60506">HOME</a>
-
-      <div class="dropdown">
-        <button class="drop-btn"> HVAC SERVICES
-          <i class="fas fa-sort-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="furnace-heating.html">Furnace & Heating</a>
-          <a href="air-conditioning.html">Air Conditioning</a>
-          <a href="ductless.html">Ductless</a>
-          <a href="heat-pumps.html">Heat Pump</a>
-          <a href="air-handlers.html">Air Handlers</a>
-          <a href="indoor-air-quality.html">Indoor Air Quality</a>
-          <a href="commercial-hvac.html">Commercial</a>
-          <a href="preventative-maintenance.html">Preventative Maintenance</a>
-        </div>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       </div>
 
+      <div class="desktop-nav-bottom-links">
+        <a href="index.html">HOME</a>
+
+        <div class="dropdown">
+          <button class="drop-btn"> HVAC SERVICES
+            <i class="fas fa-sort-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="furnace-heating.html">Furnace & Heating</a>
+            <a href="air-conditioning.html">Air Conditioning</a>
+            <a href="ductless.html">Ductless</a>
+            <a href="heat-pumps.html">Heat Pump</a>
+            <a href="air-handlers.html">Air Handlers</a>
+            <a href="indoor-air-quality.html">Indoor Air Quality</a>
+            <a href="commercial-hvac.html">Commercial</a>
+            <a href="preventative-maintenance.html">Preventative Maintenance</a>
+          </div>
+        </div>
+
+        <a href="https://trueskycu.merchantlinq.com/cHhEWm5keFp0eFhBaEtwTW5mc2ZmdHFmZGlRYjFpUG1mZHEzRk82czhsdHFXWWsqMWRhYSoxOFhrOVVxUkhSKjFyQVR2N21RKlNsaHM1OVcyKjFlaVpMQzFYZlhlb3VEa0NNNlYwdVhNM2JEQXNhcFNBS0RUdG5CaVhScXJBaFhMUHVjWXRodlRLQTlGSWxtbHZiZmp5VFpNZ2c9PQ==">FINANCING</a>
+        <a href="contact.html">GET A FREE QUOTE</a>
+      </div>
     </div>
   </nav>
 
-  <section id="contact-page-form" class="secondary-contact-form">
-
-    <div class="f5-container">
-
-      <h1 style="color: #296AB1;">Get a FREE Quote</h1>
-
-      <form class="contact-form-body" action="https://formspree.io/mvowvbeb" method="POST">
-        <label for="name"></label><br>
-        <input type="text" id="name" name="name" placeholder="Name" required><br>
-
-        <label for="phone"></label><br>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="off" placeholder="405-324-9823" required><br>
-
-        <label for="zip"></label><br>
-        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" autocomplete="off" placeholder="73008" required><br>
-
-        <label for="additional-info"></label><br>
-        <textarea id="additional-info" name="additional-info" rows="4" placeholder="How can we help you?" required></textarea>
-
-        <div class="submit-btn">
-          <button type="submit" id="submit-btn">Submit ></button>
+  <!-- Three-Column Contact Section -->
+  <section class="contact-three-column-section">
+    <div class="contact-three-column-wrapper">
+      <div class="contact-three-column-container">
+        <!-- Left Column: Contact Form with Header -->
+        <div class="contact-form-wrapper">
+          <div class="contact-section-header">
+            <div class="contact-form-header">
+              <i class="fas fa-comments"></i>
+              <span>CONTACT US</span>
+            </div>
+            <h2 class="contact-form-title">Get in Touch with Us</h2>
+          </div>
+          <div class="contact-form-column">
+            <form class="contact-three-column-form" action="https://formspree.io/mvowvbeb" method="POST">
+          <div class="form-row">
+            <div class="form-field-half">
+              <label for="full-name">Full Name*</label>
+              <input type="text" id="full-name" name="name" placeholder="Full Name*" required>
+            </div>
+            <div class="form-field-half">
+              <label for="phone-number">Phone Number*</label>
+              <input type="tel" id="phone-number" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone Number*" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field-half">
+              <label for="email-address">Email Address*</label>
+              <input type="email" id="email-address" name="email" placeholder="Email Address*" required>
+            </div>
+            <div class="form-field-half">
+              <label for="service-type">Service Type*</label>
+              <select id="service-type" name="service-type" required>
+                <option value="">Select a service...</option>
+                <option value="furnace-heating">Furnace & Heating</option>
+                <option value="air-conditioning">Air Conditioning</option>
+                <option value="ductless">Ductless</option>
+                <option value="heat-pump">Heat Pump</option>
+                <option value="air-handlers">Air Handlers</option>
+                <option value="indoor-air-quality">Indoor Air Quality</option>
+                <option value="commercial">Commercial</option>
+                <option value="preventative-maintenance">Preventative Maintenance</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field-full">
+              <label for="select-service">Select*</label>
+              <select id="select-service" name="select-service" required>
+                <option value="">Select an option...</option>
+                <option value="repair">Repair</option>
+                <option value="installation">Installation</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="consultation">Consultation</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field-full">
+              <label for="your-message">Your Message</label>
+              <textarea id="your-message" name="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="send-now-btn">
+            Send Now
+            <i class="fas fa-arrow-up-right"></i>
+          </button>
+        </form>
+          </div>
         </div>
 
-      </form>
+      <!-- Middle Column: Contact Information -->
+      <div class="contact-info-column">
+        <h2 class="contact-info-title">Contacts Information</h2>
+        <p class="contact-info-description">Have question about your HVAC system? Need a repair, installation, or routine maintenance?</p>
+        
+        <div class="contact-info-items">
+          <div class="contact-info-item-new">
+            <div class="contact-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Email</h3>
+              <p><a href="mailto:info@tulsacomfortsystems.com">info@tulsacomfortsystems.com</a></p>
+            </div>
+          </div>
 
+          <div class="contact-info-item-new">
+            <div class="contact-icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Locations</h3>
+              <p>123 Main St<br>Tulsa, OK 74103</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item-new">
+            <div class="contact-icon-box">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Phone</h3>
+              <p><a href="tel:+14052657777">+1 (405) 265-7777</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item-new">
+            <div class="contact-icon-box">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Business Hours</h3>
+              <p>Mon - Fri: 7:00 AM - 7:00 PM<br>Sat: 8:00 AM - 5:00 PM<br>Sun: Emergency Only</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item-new">
+            <div class="contact-icon-box">
+              <i class="fas fa-map"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Service Area</h3>
+              <p>Tulsa, Yukon, West OKC<br>& Surrounding Areas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media-section">
+          <p class="follow-us-text">Follow Us:</p>
+          <div class="social-icons-new">
+            <a href="#" class="social-icon-new facebook-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon-new linkedin-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-icon-new twitter-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon-new instagram-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Google Map -->
+      <div class="contact-map-column">
+        <iframe 
+          id="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.5!2d-95.992775!3d36.153982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzYsIC05NS45OTI3NzU!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0; min-height: 600px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="custom-zoom-controls">
+          <button class="zoom-btn zoom-in" id="zoom-in-btn" aria-label="Zoom in">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="zoom-btn zoom-out" id="zoom-out-btn" aria-label="Zoom out">
+            <i class="fas fa-minus"></i>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="financing-promo-section">
+    <div class="financing-promo-container">
+      <div class="financing-promo-visuals">
+        <div class="phone-mockup phone-mockup-1">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span>9:41</span>
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="phone-content">
+              <div class="account-card">
+                <div class="account-header">
+                  <div class="account-logo"></div>
+                  <div>
+                    <h3>TrueSky Credit Union</h3>
+                    <p>HVAC Financing - Account</p>
+                  </div>
+                </div>
+                <div class="balance-section">
+                  <p>Available Balance</p>
+                  <h2>$0 - $50,000</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-mockup phone-mockup-2">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span>9:41</span>
+              <i class="fas fa-arrow-left"></i>
+              <i class="fas fa-wifi"></i>
+            </div>
+            <div class="phone-content">
+              <div class="chart-container">
+                <div class="pie-chart">
+                  <div class="chart-center">
+                    <span class="chart-amount">$0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Approved</span>
+                  <span class="stat-value">$50,000</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Used</span>
+                  <span class="stat-value">$0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="financing-promo-content">
+        <h2>Manage Finance Easier: With Flexible Payment Options</h2>
+        <p>Get the HVAC system you need without breaking the bank. Our flexible financing options make it easy to afford quality heating and cooling solutions for your home or business.</p>
+        <div class="financing-steps">
+          <div class="step-item">
+            <span class="step-number">01</span>
+            <span class="step-text">Apply Online</span>
+          </div>
+          <div class="step-item">
+            <span class="step-number">02</span>
+            <span class="step-text">Get Approved</span>
+          </div>
+          <div class="step-item">
+            <span class="step-number">03</span>
+            <span class="step-text">Start Your Project</span>
+          </div>
+        </div>
+        <a href="https://trueskycu.merchantlinq.com/cHhEWm5keFp0eFhBaEtwTW5mc2ZmdHFmZGlRYjFpUG1mZHEzRk82czhsdHFXWWsqMWRhYSoxOFhrOVVxUkhSKjFyQVR2N21RKlNsaHM1OVcyKjFlaVpMQzFYZlhlb3VEa0NNNlYwdVhNM2JEQXNhcFNBS0RUdG5CaVhScXJBaFhMUHVjWXRodlRLQTlGSWxtbHZiZmp5VFpNZ2c9PQ==" target="_blank" class="financing-cta-btn">Get Started Today</a>
+      </div>
     </div>
   </section>
 
-  <div class="google-map">
+  <section class="our-services other-services-row">
+    <h1>OTHER SERVICES</h1>
+    <div class="service-cards-wrapper">
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/furnace-heating.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>FURNACE & HEATING</h2>
+        <p>Professional heating solutions to keep your home warm and comfortable year-round.</p>
+        <div class="learn-more-btn">
+          <a href="furnace-heating.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
 
-    <h2 style="color: #296AB1;">Get Directions</h2>
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/air-conditioning.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>AIR CONDITIONING</h2>
+        <p>Beat the heat with our reliable air conditioning installation and repair services.</p>
+        <div class="learn-more-btn">
+          <a href="air-conditioning.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12992.597642031627!2d-97.7351033!3d35.5005836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ad8a5283b45fc1f!2sShockley&#39;s%20Heat%20%26%20Air!5e0!3m2!1sen!2sus!4v1594701333550!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/ductless.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>DUCTLESS</h2>
+        <p>Energy-efficient ductless mini-split systems perfect for any space.</p>
+        <div class="learn-more-btn">
+          <a href="ductless.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
 
-  </div>
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/heat-pumps.webp);">
+      </div>
+      <div class="service-card-content">
+        <h2>HEAT PUMP</h2>
+        <p>Versatile heating and cooling solutions for year-round comfort and efficiency.</p>
+        <div class="learn-more-btn">
+          <a href="heat-pumps.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/air-handlers.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>AIR HANDLERS</h2>
+        <p>Optimize your indoor air quality with professional air handler services.</p>
+        <div class="learn-more-btn">
+          <a href="air-handlers.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/indoor-air-quality.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>INDOOR AIR QUALITY</h2>
+        <p>Breathe easier with our comprehensive indoor air quality solutions.</p>
+        <div class="learn-more-btn">
+          <a href="indoor-air-quality.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/commercial-hvac.webp);">
+      </div>
+      <div class="service-card-content">
+        <h2>COMMERCIAL</h2>
+        <p>Commercial HVAC solutions tailored to your business needs and requirements.</p>
+        <div class="learn-more-btn">
+          <a href="commercial-hvac.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-image" style="background-image: url(images/preventetive-maintenance.jpg);">
+      </div>
+      <div class="service-card-content">
+        <h2>PREVENTATIVE MAINTENANCE</h2>
+        <p>Keep your HVAC system running efficiently with our maintenance plans.</p>
+        <div class="learn-more-btn">
+          <a href="preventative-maintenance.html">LEARN MORE ↗</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
   <footer>
-    <a href="tel:+14052657777">(405) 265-7777</a>
-    <p>700 S Ranchwood Blvd, Yukon, OK 73099</p>
-    <p>Copyright <i class="far fa-copyright"></i> 2020 SHOCKLEYS HEAT & AIR, LLC</p>
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Column 1: Company Info & Social -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Tulsa Comfort Systems Logo">
+          </div>
+          <p class="footer-description">At Tulsa Comfort Systems, we are dedicated to providing top-quality heating and cooling solutions to keep your home or business comfortable all year round with expert technicians.</p>
+          <div class="social-section">
+            <p class="follow-us">Follow Us:</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html">Get a Free Quote</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Our Services -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Our Services</h3>
+            <ul class="footer-links">
+              <li><a href="furnace-heating.html">Heating & Furnace Services</a></li>
+              <li><a href="air-conditioning.html">Air Conditioning Installation</a></li>
+              <li><a href="indoor-air-quality.html">Indoor Air Quality Solutions</a></li>
+              <li><a href="preventative-maintenance.html">HVAC Maintenance Plans</a></li>
+              <li><a href="contact.html">Emergency HVAC Services</a></li>
+              <li><a href="commercial-hvac.html">Commercial HVAC Services</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Us -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+14052657777">(405) 265-7777</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>700 S Ranchwood Blvd, Yukon, OK 73099</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@tulsacomfortsystems.com">info@tulsacomfortsystems.com</a>
+              </li>
+              <li>
+                <i class="fas fa-globe"></i>
+                <span>www.tulsacomfortsystems.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Copyright & Legal -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-line"></div>
+        <div class="footer-bottom-content">
+          <p class="copyright">© 2025 Tulsa Comfort Systems. All Rights Reserved.</p>
+          <div class="footer-legal">
+            <a href="#privacy">Privacy Policy</a>
+            <span>|</span>
+            <a href="#terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    
   </footer>
+
+  <script>
+    // Zoom controls for iframe map - note: iframe zoom control is limited
+    // Users can use the built-in map controls or our custom buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      const zoomInBtn = document.getElementById('zoom-in-btn');
+      const zoomOutBtn = document.getElementById('zoom-out-btn');
+      
+      // Note: Direct zoom control of Google Maps iframe is not possible due to cross-origin restrictions
+      // The buttons are styled but functionality is limited
+      // Users can interact with the map directly or use the map's built-in controls
+      if (zoomInBtn) {
+        zoomInBtn.addEventListener('click', function() {
+          // Try to focus the iframe - actual zoom requires user interaction with the map
+          document.getElementById('contact-map').focus();
+        });
+      }
+      
+      if (zoomOutBtn) {
+        zoomOutBtn.addEventListener('click', function() {
+          document.getElementById('contact-map').focus();
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
