@@ -90,8 +90,8 @@ overflow-x: hidden;
     font-size: 26px;
    padding: 20px 0px 30px 0px;
   }
-  .our-services {
-    padding: 40px 20px 40px 20px;
+  .our-services:not(.other-services-row) {
+    padding: 40px 20px 20px 20px;
     justify-content: center;
     gap: 20px;
     max-width: 100%;
@@ -115,24 +115,32 @@ overflow-x: hidden;
     padding: 50px 0 30px 0;
    
   }
-  .our-services {
+  .our-services:not(.other-services-row) {
     padding: 50px 50px 100px 50px;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
   }
  
-
-  .service-card {
+  .our-services:not(.other-services-row) .service-card {
     width: calc((100% - 100px) / 3);
-    max-width: 380px;
-    min-width: 200px;
+    max-width: calc((100% - 100px) / 3);
+    min-width: calc((100% - 100px) / 3);
     max-height: 480px;
     margin-bottom: 0;
     border-radius: 8px;
     box-sizing: border-box;
     flex-shrink: 0;
+  }
+  
+  /* Constrain cards to max width to prevent more than 3 per row */
+  @media screen and (min-width: 1500px) {
+    .our-services:not(.other-services-row) {
+      padding-left: calc((100% - 1400px) / 2);
+      padding-right: calc((100% - 1400px) / 2);
+    }
   }
   
   /* For Other Services section - show 4 cards, scroll for rest */
@@ -154,6 +162,12 @@ overflow-x: hidden;
     padding: 0 0 30px 0;
     margin: 0;
     display: block;
+  }
+
+  @media screen and (max-width: 799px) {
+    .our-services.other-services-row h1 {
+      padding: 20px 0 20px 0;
+    }
   }
   
   .our-services.other-services-row .service-cards-wrapper {

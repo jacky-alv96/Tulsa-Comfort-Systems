@@ -137,14 +137,33 @@
     background-color: #FF6600;
     background-image: url(../images/car2.png);
     background-size: 1000px;
-    background-position: calc(100% - 20px) calc(100% - 25px);
+    background-position: calc(100% - 100px) calc(100% - 25px);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     height: 80vh;
-    padding: 0px 0 0 60px;
+    padding: 0px 50px 0 50px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Align header content with skills section */
+  .desktop-header-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Constrain header content on very wide screens to match skills section */
+  @media screen and (min-width: 1500px) {
+    .desktop-header {
+      padding-left: calc((100% - 1400px) / 2);
+      padding-right: calc((100% - 1400px) / 2);
+    }
   }
   
   .desktop-header h1 {

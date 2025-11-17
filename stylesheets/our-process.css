@@ -5,17 +5,28 @@
 @media screen and (min-width: 800px) {
   .process-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     background-color: #1A1A1A;
     color: #fff;
     padding: 80px 100px;
-    gap: 60px;
+    gap: 100px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Constrain the content to keep columns together */
+  @media screen and (min-width: 1600px) {
+    .process-section {
+      padding-left: calc((100% - 1400px) / 2);
+      padding-right: calc((100% - 1400px) / 2);
+    }
   }
   
   .process-content {
-    flex: 1;
-    max-width: 50%;
+    flex: 0 1 750px;
+    max-width: 750px;
   }
   
   .process-content h2 {
@@ -30,6 +41,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 750px;
+    width: 100%;
   }
   
   .step {
@@ -43,6 +56,9 @@
     position: relative;
     transition: all 0.3s;
     cursor: pointer;
+    max-width: 750px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .step.highlighted {
@@ -110,12 +126,13 @@
   }
   
   .process-images {
-    flex: 1;
+    flex: 0 1 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     max-width: 500px;
+    min-width: 400px;
   }
   
   .process-images img {

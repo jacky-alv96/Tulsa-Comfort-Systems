@@ -117,18 +117,31 @@
 @media screen and (min-width: 800px) {
   .skills-section {
     display: block;
-    padding: 100px 0;
+    padding: 50px 50px 100px 50px;
     background: white;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .skills-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     gap: 60px;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Constrain content on very wide screens to match services section */
+  @media screen and (min-width: 1500px) {
+    .skills-section {
+      padding-left: calc((100% - 1400px) / 2);
+      padding-right: calc((100% - 1400px) / 2);
+    }
   }
 
   .skills-left {

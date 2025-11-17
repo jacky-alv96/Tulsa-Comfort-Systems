@@ -51,6 +51,7 @@
   position: relative;
   min-height: 400px;
   z-index: 2;
+  padding-top: 40px;
 }
 
 .phone-mockup {
@@ -301,13 +302,18 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 300px;
+  margin: 0;
 }
 
 .step-number {
   font-size: 24px;
   font-weight: 700;
   color: #ff6600;
-  min-width: 50px;
+  width: 60px;
+  text-align: right;
+  flex-shrink: 0;
+  display: block;
 }
 
 .step-text {
@@ -390,6 +396,13 @@
 @media screen and (max-width: 799px) {
   .financing-promo-section {
     padding: 60px 20px;
+    border-radius: 12px;
+    margin: 0 10px;
+  }
+
+  .financing-promo-container {
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   .phone-mockup {
