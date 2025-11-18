@@ -22,6 +22,13 @@
   position: relative;
 }
 
+/* Hide mobile header when menu is open */
+@media screen and (max-width: 799px) {
+  body.menu-open .mobile-header {
+    display: none;
+  }
+}
+
 .header-btns {
   display: flex;
   flex-direction: column;
