@@ -7,7 +7,7 @@ justify-content: space-between;
 background-color: #F5F5F5;
 width: 100%;
 max-width: 100%;
-  padding: 50px 0 80px 0;
+padding: 50px 0 80px 0;
 box-sizing: border-box;
 overflow-x: hidden;
 }
@@ -15,7 +15,6 @@ overflow-x: hidden;
   text-align: center;
   font-size: 28px;
   font-weight: bold;
-  padding: 50px 0;
   width: 100%;
   flex-basis: 100%;
 }
@@ -61,7 +60,7 @@ overflow-x: hidden;
 
 .service-card-content p {
   color: black;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   margin: 0 0 20px 0;
   flex: 1;
@@ -90,7 +89,7 @@ overflow-x: hidden;
     font-size: 26px;
    padding: 20px 0px 30px 0px;
   }
-  .our-services:not(.other-services-row) {
+  .our-services {
     padding: 40px 20px 20px 20px;
     justify-content: center;
     gap: 20px;
@@ -112,7 +111,7 @@ overflow-x: hidden;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    padding: 50px 0 30px 0;
+ 
    
   }
   .our-services:not(.other-services-row) {
@@ -145,7 +144,7 @@ overflow-x: hidden;
   
   /* For Other Services section - show 4 cards, scroll for rest */
   .our-services.other-services-row {
-    margin-top: 80px;
+  
     flex-direction: column;
     align-items: stretch;
     overflow-x: visible;
@@ -159,14 +158,21 @@ overflow-x: hidden;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    padding: 0 0 30px 0;
+    padding: 0 0 50px 0;
     margin: 0;
     display: block;
   }
 
   @media screen and (max-width: 799px) {
+    .our-services.other-services-row {
+      padding: 40px 20px 20px 20px;
+    }
     .our-services.other-services-row h1 {
       padding: 20px 0 20px 0;
+    }
+    .our-services.other-services-row .service-cards-wrapper {
+      padding: 0 20px;
+      scroll-padding-left: 20px;
     }
   }
   
@@ -176,16 +182,16 @@ overflow-x: hidden;
     flex-wrap: nowrap;
     gap: 30px;
     overflow-x: auto;
-    padding: 0 50px;
+    padding: 0 30px;
     scroll-padding-left: 50px;
     width: 100%;
     box-sizing: border-box;
   }
   
   .our-services.other-services-row .service-card {
-    width: 280px;
-    min-width: 280px;
-    max-width: 280px;
+    width: 360px;
+    min-width: 360px;
+    max-width: 360px;
     flex-shrink: 0;
     height: auto;
   }

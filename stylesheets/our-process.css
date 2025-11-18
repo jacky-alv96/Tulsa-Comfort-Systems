@@ -126,13 +126,14 @@
   }
   
   .process-images {
-    flex: 0 1 500px;
+    flex: 0 1 530px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 400px;
+    align-self: stretch;
   }
   
   .process-images img {
