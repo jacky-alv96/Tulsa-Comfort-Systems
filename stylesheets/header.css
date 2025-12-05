@@ -20,7 +20,7 @@
   min-height: 60vh;
   padding: 40px 25px 40px 25px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Hide mobile header when menu is open and ensure it stays behind navigation */
@@ -41,15 +41,20 @@
   
   /* Ensure mobile header stays behind navigation when scrolling */
   .mobile-header {
-    z-index: -1;
-    position: static;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
   }
   
   .mobile-header h1,
   .mobile-header p,
   .mobile-header .btn-blue {
-    z-index: auto;
-    position: static;
+    z-index: 1;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -111,7 +116,7 @@
   text-align: left;
   line-height: 1.5;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -126,7 +131,7 @@
   font-weight: 400;
   letter-spacing: 0.3px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .mobile-header .btn-blue {
@@ -138,7 +143,7 @@
   text-align: center;
   padding: 14px 24px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   transition: background-color 0.3s, color 0.3s;
 }
 
